@@ -1,16 +1,15 @@
-
-import './App.css'
+import CourseGoal from "./components/CourseGoal";
+import "./App.css";
 
 function App() {
-
-
   return (
-    <>
-     
-      <h1>Let's get started</h1>
-    
-    </>
-  )
+    <main>
+      <CourseGoal
+        title="Learn TypeScript"
+        description="Master TypeScript with hands-on projects"
+      />
+    </main>
+  );
 }
 
-export default App
+export default App;
