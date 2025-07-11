@@ -15,7 +15,7 @@ function CourseGoalList({ goals, onDeleteGoal }: CourseGoalListProps) {
  if (goals.length === 0) {
 
   return (
-    <InfoBox mode='hint'>
+    <InfoBox mode='hint' >
       No goals found. Try adding one!
     </InfoBox>
   )
@@ -24,7 +24,7 @@ function CourseGoalList({ goals, onDeleteGoal }: CourseGoalListProps) {
   let warningBox: ReactNode
   if (goals.length >= 4) {
     warningBox = (
-      <InfoBox mode='warning'>
+      <InfoBox mode='warning' severity='high' >
         You have more than 4 goals! Consider focusing on fewer goals at a time.
       </InfoBox>
     );
